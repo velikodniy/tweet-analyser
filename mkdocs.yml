@@ -1,0 +1,30 @@
+site_name: tweet-analyser
+repo_url: https://github.com/velikodniy/tweet-analyser
+site_url: https://velikodniy.github.io/tweet-analyser
+site_description: A tweet analyser
+site_author: Vadim
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+            setup_commands:
+                - import sys
+                - sys.path.append('../')
+copyright: Maintained by Vadim.
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    primary: white
+    accent: blue
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
